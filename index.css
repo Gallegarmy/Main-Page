@@ -8,6 +8,9 @@ body {
     transition: transform 500ms !important;
 }
 
+.navbar-toggler-icon {
+    color: #FFF !important;
+}
 
 .nav-link:hover {
     color: black !important;
