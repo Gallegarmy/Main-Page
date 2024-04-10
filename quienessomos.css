@@ -1,6 +1,6 @@
 body {
     font-family: 'Reddit Mono', monospace;
-    background: linear-gradient(to right, #333333, #666666);
+    background: #333333;
 }
 
 .nav-link {
