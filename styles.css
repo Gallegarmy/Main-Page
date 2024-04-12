@@ -4,7 +4,7 @@ body {
 }
 
 .nav-link {
-    color: #fff !important; 
+    color: #fff !important;
     transition: transform 500ms !important;
 }
 
@@ -17,8 +17,11 @@ body {
     transform: scale(1.5) !important;
 }
 
-h1,h2,h3 {
-    color: #fff; /* White text color for contrast */
+h1,
+h2,
+h3 {
+    color: #fff;
+    /* White text color for contrast */
     padding: 20px;
 }
 
@@ -31,6 +34,7 @@ p {
     color: #fff;
     font-size: 1.5em;
 }
+
 li {
     color: #fff;
     font-size: 1.5em;
@@ -44,10 +48,10 @@ li {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 1000; 
-  }
+    z-index: 1000;
+}
 
-  .language-buttons button {
+.language-buttons button {
     margin-left: 5px;
     padding: 8px 15px;
     background-color: #808b96;
@@ -57,9 +61,9 @@ li {
     cursor: pointer;
     opacity: 0.5;
     transition: transform 500ms;
-  }
+}
 
-  .language-buttons button:hover {
+.language-buttons button:hover {
     background-color: #2a2e32;
     opacity: 1;
-  }
+}
