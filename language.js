@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
             elementosGal.forEach(function (elemento) {
                 elemento.style.display = '';
             });
+            document.getElementById("EspButton").innerText = "Castelán";
+            document.getElementById("GalButton").innerText = "Galego";
         } else if (savedLanguage == 'es') {
             var elementosEsp = document.querySelectorAll('.Esp'); // Seleccionar todos los elementos con la clase 'miObjeto'
             elementosEsp.forEach(function (elemento) {
@@ -19,6 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
             elementosGal.forEach(function (elemento) {
                 elemento.style.display = 'none';
             });
+            document.getElementById("EspButton").innerText = "Español";
+            document.getElementById("GalButton").innerText = "Gallego";
         }
     } else {
         var elementosEsp = document.querySelectorAll('.Esp'); // Seleccionar todos los elementos con la clase 'miObjeto'
@@ -29,6 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
         elementosGal.forEach(function (elemento) {
             elemento.style.display = 'none';
         });
+        document.getElementById("EspButton").innerText = "Español";
+        document.getElementById("GalButton").innerText = "Gallego";
     }
 });
 
@@ -44,6 +50,8 @@ function changeLanguage(idioma) {
             elemento.style.display = '';
         });
         localStorage.setItem('language', 'gl');
+        document.getElementById("EspButton").innerText = "Castelán";
+        document.getElementById("GalButton").innerText = "Galego";
     } else if (idioma == 'es') {
         var elementosEsp = document.querySelectorAll('.Esp'); // Seleccionar todos los elementos con la clase 'miObjeto'
         elementosEsp.forEach(function (elemento) {
@@ -54,5 +62,7 @@ function changeLanguage(idioma) {
             elemento.style.display = 'none';
         });
         localStorage.setItem('language', 'es');
+        document.getElementById("EspButton").innerText = "Español";
+        document.getElementById("GalButton").innerText = "Gallego";
     }
 }
