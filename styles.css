@@ -15,6 +15,11 @@ body {
     transition: transform 500ms !important;
 }
 
+.custom-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 .nav-link:hover {
