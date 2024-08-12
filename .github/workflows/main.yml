@@ -1,17 +1,23 @@
-on: push
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - "*"
+
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v4
-    
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-      with:
-        server: ftp.cluster023.hosting.ovh.net
-        username: sysarmy
-        password: ${{ secrets.ftp_password }}
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
 
+      - name: 📂 Sync files to /www
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ftp.cluster023.hosting.ovh.net
+          username: sysarmy
+          password: ${{ secrets.ftp_password }}
+          server-dir: /www
