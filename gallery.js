@@ -17,6 +17,12 @@ document.addEventListener("DOMContentLoaded", () => {
     modal.style.display = "none";
   };
 
+  addEventListener("keyup", (e) => {
+    if(e.key === "Escape") {
+      modal.style.display = "none";
+    }
+  });
+
   window.onclick = (event) => {
     if (event.target === modal) {
       modal.style.display = "none";
