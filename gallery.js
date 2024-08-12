@@ -18,12 +18,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var span = document.getElementsByClassName("close")[0];
 
-    // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
         modal.style.display = "none";
     };
 
-    // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
@@ -48,8 +46,6 @@ document.addEventListener("DOMContentLoaded", function() {
             lazyImageObserver.observe(lazyImage);
         });
     } else {
-        // Fallback for browsers that don't support IntersectionObserver
-        // Load all images immediately
         lazyImages.forEach(function(lazyImage) {
             lazyImage.src = lazyImage.dataset.src;
             lazyImage.onload = () => lazyImage.classList.add("loaded");
