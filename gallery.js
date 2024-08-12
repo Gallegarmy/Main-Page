@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const modal = document.getElementById("imageModal");
 
-  // Get the image and insert it inside the modal
   const modalImg = document.getElementById("modalImage");
   const regex = /\.\/img\/[a-zA-Z0-9_\-]+\.webp/g;
   const items = document.querySelectorAll(".gallery-item");
@@ -13,19 +12,19 @@ document.addEventListener("DOMContentLoaded", () => {
       modalImg.src = imgsrc;
     };
   }
+  const span = document.getElementsByClassName("close")[0];
+  span.onclick = () => {
+    modal.style.display = "none";
+  };
+
+  window.onclick = (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  };
 });
 
-const span = document.getElementsByClassName("close")[0];
 
-span.onclick = () => {
-  modal.style.display = "none";
-};
-
-window.onclick = (event) => {
-  if (event.target === modal) {
-    modal.style.display = "none";
-  }
-};
 const lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
 
 if ("IntersectionObserver" in window) {
