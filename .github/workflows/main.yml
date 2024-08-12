@@ -22,3 +22,16 @@ jobs:
           username: sysarmy
           password: ${{ secrets.ftp_password }}
           server-dir: /www/
+
+  build-and-push-docker-image:
+    name: 🐳 Build and Push Docker Image
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+      - name: 🐳 Log in to GitHub Container Registry
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+      - name: 🛠 Build the Docker image
+        run: docker build -t ghcr.io/${{ github.repository_owner }}/sysarmy-landing:latest .docker
+      - name: 🚀 Push the Docker image to GitHub Container Registry
+        run: docker push ghcr.io/${{ github.repository_owner }}/sysarmy-landing:latest
