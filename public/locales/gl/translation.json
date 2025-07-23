@@ -1,0 +1,14 @@
+{
+  "common": {
+    "welcome": "Benvidos á comunidade Galega de Sysarmy, un espazo para axudarnos, para facer networking e socializar. Somos o soporte dos que dan soporte.",
+    "adminCanasDescription": "Xuntámonos o primeiro venres de cada mes para compartir experiencias e coñecementos nun ambiente relaxado.",
+    "githubDescription": "Repositorio da comunidade Galega de Sysarmy",
+    "talleresDescription": "Xuntámonos o primeiro sábado de cada mes para divulgar coñecementos e aprender de forma práctica.",
+    "karmaDescription": "Listado de karma, o noso meme local",
+    "friendCommunities": "Comunidades amigas"
+  },
+  "errors": {
+  },
+  "success": {
+  }
+} 

@@ -1,0 +1,14 @@
+{
+  "common": {
+    "welcome": "Bienvenido a la comunidad Gallega de Sysarmy, un espacio para ayudarnos, para hacer networking y socializar. Somos el soporte para el soporte.",
+    "adminCanasDescription": "Nos juntamos el primer viernes de cada mes para compartir experiencias y conocimientos en un ambiente relajado.",
+    "githubDescription": "Repositorio de la comunidad Galega de Sysarmy",
+    "talleresDescription": "Nos juntamos el primer sábado de cada mes para divulgar conocimientos y aprender de forma práctica.",
+    "karmaDescription": "Listado de karma, nuestro meme local",
+    "friendCommunities": "Comunidades amigas"
+  },
+  "errors": {
+  },
+  "success": {
+  }
+} 
