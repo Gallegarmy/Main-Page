@@ -26,9 +26,9 @@ const CardsGrid = () => {
         link="#"
       />
       <Card
-        title="Karma"
-        description={() => t("common.karmaDescription")}
-        image="https://via.placeholder.com/150"
+        title="Timeline"
+        description={() => t("common.timelineDescription")}
+        image="faClock"
         link="#"
       />
     </div>
