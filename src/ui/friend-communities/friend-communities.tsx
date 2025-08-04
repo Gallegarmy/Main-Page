@@ -14,9 +14,6 @@ const FriendCommunities: React.FC = () => {
         {t("common.friendCommunities")}
       </h2>
       <div className="friend-communities-grid">
-        <div className="community-item">
-          <img src="/assets/communities/aIndustriosa.png" alt="A Industriosa" />
-        </div>
         <button
           className="community-item"
           onMouseEnter={() => setCorunaWtfHovered(true)}
@@ -27,8 +24,8 @@ const FriendCommunities: React.FC = () => {
           <img
             src={
               corunaWtfHovered
-                ? "/assets/communities/corunaWTF_reverse.svg"
-                : "/assets/communities/corunaWTF.svg"
+                ? "/assets/communities/corunawtf_reverse.svg"
+                : "/assets/communities/corunawtf.svg"
             }
             alt="Coruña WTF"
           />

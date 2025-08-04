@@ -1,5 +1,6 @@
 import "./home.styles.css";
 import MainHeader from "../../ui/main-header/main-header";
+import LareiraConf from "../../ui/lareiraconf/lareiraconf";
 import CardsGrid from "../../ui/cards-grid";
 import TerminalHeader from "../../ui/terminal-header/terminal-header";
 import FriendCommunities from "../../ui/friend-communities/friend-communities";
@@ -11,6 +12,7 @@ const Home = () => {
       <MainHeader />
       <CardsGrid />
       <FriendCommunities />
+      <LareiraConf />
     </div>
   );
 };

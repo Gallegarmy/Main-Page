@@ -1,0 +1,57 @@
+.container {
+  height: 25vh;
+  max-height: 25vh;
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.container::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: -1;
+}
+
+.social-links {
+	display: flex;
+	gap: 2rem;
+	margin-top: 2rem;
+}
+
+.social-links svg {
+	color: #ffffff;
+	cursor: pointer;
+	transition: color 0.3s ease;
+}
+
+.social-links svg:hover {
+	color: #666666;
+}
+
+h1 {
+	color: #ffffff;
+	margin: 2rem 0;
+	text-align: center;
+	font-weight: bold;
+	font-size: 2.5rem;
+}
+
+.subtitle {
+	color: #ffffff;
+	margin: 0 0 2rem 0;
+	text-align: center;
+	font-size: 1.2rem;
+	opacity: 0.8;
+	max-width	: 800px;
+}
