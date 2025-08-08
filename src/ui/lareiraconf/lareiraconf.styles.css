@@ -1,18 +1,18 @@
-.container {
-  height: 25vh;
-  max-height: 25vh;
-  overflow: hidden; 
+.LareiraConfContainer {
+  height: 40vh;
+  max-height: 40vh;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 100vw;
+  width: 100%;
   box-sizing: border-box;
   padding: 1rem;
 }
 
-.container::before {
+.LareiraConfContainer::before {
 	content: '';
 	position: absolute;
 	top: 0;

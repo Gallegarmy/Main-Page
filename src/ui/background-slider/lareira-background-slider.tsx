@@ -11,7 +11,13 @@ const images = [
   "/assets/lareiraConfImg/lareira7.jpg",
 ]; //TODO: put it in a new constants file
 
-export const BackgroundSlider: React.FC = () => {
+interface BackgroundSliderProps {
+  height?: string;
+}
+
+export const BackgroundSlider: React.FC<BackgroundSliderProps> = ({
+  height,
+}) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -25,7 +31,12 @@ export const BackgroundSlider: React.FC = () => {
   }, []);
 
   return (
-    <div className="background-slider">
+    <div
+      className="background-slider"
+      style={{
+        height: `${height ?? "100%"}`,
+      }}
+    >
       {images.map((image, index) => (
         <div
           key={image}

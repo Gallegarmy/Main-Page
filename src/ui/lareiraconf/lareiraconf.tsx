@@ -10,8 +10,8 @@ const LareiraConf = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="container">
-      <BackgroundSlider />
+    <div className="LareiraConfContainer">
+      <BackgroundSlider height="40vh" />
 
       <p className="subtitle">{t("common.welcome")}</p>
 
