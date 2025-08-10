@@ -1,5 +1,4 @@
 import "i18next";
-import { resources } from "../../public/locales/gl/translation.json";
 
 declare module "i18next" {
   interface CustomTypeOptions {
@@ -20,9 +19,7 @@ declare module "i18next" {
 }
 
 declare module "react-i18next" {
-  interface UseTranslationResponse<
-    N extends keyof CustomTypeOptions["resources"]
-  > {
+  interface UseTranslationResponse<> {
     t: (key: string) => string;
   }
 }

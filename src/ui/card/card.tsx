@@ -17,8 +17,15 @@ const Card: React.FC<CardProps> = ({
   const descriptionText =
     typeof description === "function" ? description() : description;
 
+  const noDescription = !descriptionText;
+
   return (
-    <a href={link} target="_blank" rel="noopener noreferrer" className="card">
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`card ${noDescription ? "no-description" : ""}`}
+    >
       {renderImage(image, title)}
       <h3 className="title">{title}</h3>
       <p>{descriptionText}</p>

@@ -1,16 +1,11 @@
-import { useTranslation } from "react-i18next";
 import Card from "../card";
 import "./timeline-grid.styles.css";
 
 const TimelineGrid = () => {
-  const { t } = useTranslation();
-
   return (
-    <>  
+    <>
       <div className="text-container">
-      <h2 className="timeline-title">
-          A Coruña
-      </h2>    
+        <h2 className="timeline-title">A Coruña</h2>
       </div>
       <div className="timeline-grid">
         <Card
@@ -25,12 +20,10 @@ const TimelineGrid = () => {
         />
       </div>
       <div className="text-container">
-        <h2 className="timeline-title">
-            Vigo
-        </h2>  
+        <h2 className="timeline-title">Vigo</h2>
       </div>
       <div className="timeline-grid">
-      <Card
+        <Card
           title="2025"
           image="faBeer"
           link="https://cloud.sysarmy.galicia.dev/apps/photos/public/sw6tEvMmlvC4ORgeM2kqIMQXJO1rdBRz"
