@@ -29,7 +29,7 @@ const CardsGrid = () => {
         title="Timeline"
         description={() => t("common.timelineDescription")}
         image="faClock"
-        link="#"
+        link="/timeline"
       />
     </div>
   );

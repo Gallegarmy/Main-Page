@@ -3,7 +3,7 @@ import { renderImage } from "./card.utils";
 
 interface CardProps {
   title: string;
-  description: string | (() => string);
+  description?: string | (() => string);
   image: string;
   link: string;
 }
