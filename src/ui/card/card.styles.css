@@ -37,7 +37,7 @@
 
 .card.no-description svg,
 .card.no-description img {
-  flex: 0 0 75%;
+  flex: 0 0 65%;
   width: 100%;
   object-fit: cover;
   display: block;
@@ -47,7 +47,6 @@
 .card.no-description .title {
   flex: 0 0 25%;
   display: flex;
-  align-items: center;
   justify-content: center;
   margin: 0;
   text-align: center;

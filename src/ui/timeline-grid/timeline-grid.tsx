@@ -10,12 +10,12 @@ const TimelineGrid = () => {
       <div className="timeline-grid">
         <Card
           title="2025"
-          image="faBeer"
+          image="/assets/timeline/admin2025coruna.jpg"
           link="https://cloud.sysarmy.galicia.dev/apps/photos/public/c7hGm8E9Mz9x02w1FOVxNpZD4LD85Rvl"
         />
         <Card
           title="2024"
-          image="faBeer"
+          image="/assets/timeline/admin2024coruna.jpeg"
           link="https://cloud.sysarmy.galicia.dev/apps/photos/public/3TtB5dfdcB1ZX9FWBol7At9LZzcsZsnH"
         />
       </div>
@@ -25,7 +25,7 @@ const TimelineGrid = () => {
       <div className="timeline-grid">
         <Card
           title="2025"
-          image="faBeer"
+          image="/assets/timeline/admin2025vigo.jpg"
           link="https://cloud.sysarmy.galicia.dev/apps/photos/public/sw6tEvMmlvC4ORgeM2kqIMQXJO1rdBRz"
         />
       </div>

@@ -13,17 +13,22 @@ const LareiraConf = () => {
     <div className="LareiraConfContainer">
       <BackgroundSlider height="40vh" />
 
-      <p className="subtitle">{t("common.welcome")}</p>
+      <img
+        src={"/assets/lareiraConfImg/LareiraLogo.png"}
+        alt="sysArmyGalicia"
+        height={250}
+      />
+      <p className="subtitle">{t("common.lareiraConf")}</p>
 
-      <div className="social-links">
+      <button className="lareiraButton">
         <a
-          href="https://t.me/Gallegarmy"
+          href="http://www.lareiraconf.es"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faTelegram} style={{ height: "32px" }} />
+          Conocer más
         </a>
-      </div>
+      </button>
     </div>
   );
 };
