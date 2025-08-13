@@ -19,16 +19,16 @@ const LareiraConf = () => {
         height={250}
       />
       <p className="subtitle">{t("common.lareiraConf")}</p>
-
-      <button className="lareiraButton">
-        <a
+      <a
           href="http://www.lareiraconf.es"
           target="_blank"
           rel="noopener noreferrer"
+          className="subtitle"
         >
-          Conocer más
-        </a>
-      </button>
+        <div className="lareiraButton">
+          {t("common.lareiraLink")}
+        </div>
+      </a>
     </div>
   );
 };
