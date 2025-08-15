@@ -55,3 +55,16 @@ h1 {
 	opacity: 0.8;
 	max-width	: 800px;
 }
+
+a {
+	text-decoration: none;
+}
+
+.lareiraButton {
+	background-color: black;
+    color: "white";
+   	border: 1px solid #fff;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 32px;
+}

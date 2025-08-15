@@ -6,12 +6,15 @@ declare module "i18next" {
     resources: {
       translation: {
         common: {
-          welcome: string;
           adminCanasDescription: string;
-          githubDescription: string;
-          talleresDescription: string;
-          karmaDescription: string;
           friendCommunities: string;
+          githubDescription: string;
+          karmaDescription: string;
+          lareiraConf: string;
+          lareiraLink: string;
+          talleresDescription: string;
+          timelineDescription: string;
+          welcome: string;
         };
       };
     };
