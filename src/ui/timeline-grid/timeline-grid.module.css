@@ -1,0 +1,43 @@
+.timelineGrid {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.cityHeader {
+  display: flex;
+  align-items: last baseline;
+  margin: 2rem 0;
+}
+
+.icon {
+  margin-right: 1rem;
+  font-size: 25px;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 2rem;
+  margin: 0rem;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: fit-content;
+}
+
+.cardItem {
+  list-style: none;
+}
+
+.card {
+  border-radius: 3px;
+  padding: 20px;
+}
+
+.card img {
+  width: 340px;
+}
