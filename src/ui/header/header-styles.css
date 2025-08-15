@@ -1,0 +1,19 @@
+.headerContainer {
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+  font-size: larger;
+}
+
+.headerContainer h1 {
+  margin: 0 auto;
+  display: flex;
+  align-self: center;
+  font-size: 3rem;
+}
+
+.sysarmyLogo {
+  width: 80px;
+  margin: 10px;
+  height: auto;
+  -webkit-user-drag: none;
+}
