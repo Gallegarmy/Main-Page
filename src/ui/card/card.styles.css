@@ -8,6 +8,7 @@
   color: #ffffff;
   text-decoration: none;
   padding: 32px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .card:visited {
@@ -25,7 +26,7 @@
 .title {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 8px;
+  margin: 0;
 }
 
 .card svg {
@@ -33,21 +34,4 @@
   font-size: 48px;
   margin-bottom: 8px;
   align-self: start;
-}
-
-.card.no-description svg,
-.card.no-description img {
-  flex: 0 0 65%;
-  width: 100%;
-  object-fit: cover;
-  display: block;
-  margin: 0;
-}
-
-.card.no-description .title {
-  flex: 0 0 25%;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  text-align: center;
 }
