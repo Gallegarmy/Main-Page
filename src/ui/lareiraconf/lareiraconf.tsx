@@ -1,9 +1,7 @@
 import { useTranslation } from "react-i18next";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTelegram,
-} from "@fortawesome/free-brands-svg-icons";
+
 import { BackgroundSlider } from "../background-slider/lareira-background-slider";
+
 import "./lareiraconf.styles.css";
 
 const LareiraConf = () => {
@@ -20,14 +18,12 @@ const LareiraConf = () => {
       />
       <p className="subtitle">{t("common.lareiraConf")}</p>
       <a
-          href="http://www.lareiraconf.es"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="subtitle"
-        >
-        <div className="lareiraButton">
-          {t("common.lareiraLink")}
-        </div>
+        href="http://www.lareiraconf.es"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="subtitle"
+      >
+        <div className="lareiraButton">{t("common.lareiraLink")}</div>
       </a>
     </div>
   );
