@@ -10,6 +10,8 @@ declare module "i18next" {
           friendCommunities: string;
           githubDescription: string;
           karmaDescription: string;
+          lareiraConf: string;
+          lareiraLink: string;
           talleresDescription: string;
           timelineDescription: string;
           welcome: string;
