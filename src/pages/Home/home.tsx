@@ -4,6 +4,7 @@ import LareiraConf from "../../ui/lareiraconf/lareiraconf";
 import CardsGrid from "../../ui/cards-grid";
 import TerminalHeader from "../../ui/terminal-header/terminal-header";
 import FriendCommunities from "../../ui/friend-communities/friend-communities";
+import { Footer } from "../../ui";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <CardsGrid />
       <FriendCommunities />
       <LareiraConf />
+      <Footer />
     </div>
   );
 };
