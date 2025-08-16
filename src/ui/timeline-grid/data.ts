@@ -1,4 +1,4 @@
-import { CityTimeline } from "./types";
+import { CityTimeline } from "../../types";
 
 export const timelineData: CityTimeline[] = [
   {

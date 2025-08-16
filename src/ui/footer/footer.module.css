@@ -1,0 +1,33 @@
+.footer {
+  border-top: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 100%;
+  margin-top: 2rem;
+}
+.description {
+  margin: 1rem 0;
+}
+
+.email {
+  color: white;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+}
+
+.socialLinks li {
+  list-style: none;
+}
+
+.icon {
+  height: "20px";
+  color: #ffffff;
+  cursor: pointer;
+}

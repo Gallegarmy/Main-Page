@@ -3,7 +3,7 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 import Card from "../card";
 import { timelineData } from "./data";
-import { CityTimeline } from "./types";
+import { CityTimeline } from "../../types";
 
 import s from "./timeline-grid.module.css";
 
