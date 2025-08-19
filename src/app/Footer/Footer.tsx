@@ -11,7 +11,7 @@ export const Footer = () => {
 
   return (
     <footer role="contentinfo" className="border-t-2 white flex flex-col items-center justify-center h-40">
-      <div className="text-xl">
+      <div className="text-base  m-2 md:m-4">
         <Link href="/">Sysarmy {year}</Link> -{' '}
         <a href="mailto:root@sysarmy.com" className="text-white">
           root@sysarmy.com
