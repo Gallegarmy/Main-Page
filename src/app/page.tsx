@@ -1,12 +1,11 @@
-import Link from 'next/link';
-
 import { CommunityResources } from './CommunityResources/CommunityResources';
+import { HeroSlider } from './HeroSlider/HeroSlider';
+import { heroSliderData } from './data/heroSliderData';
 
 export default function Home() {
   return (
-    <div className="border-2 min-h-screen">
-      hi
-      <Link href="/timeline">Timeline</Link>
+    <div className="min-h-screen">
+      <HeroSlider slides={heroSliderData} logo="/assets/sysarmy-galicia-logo.png" />
       <CommunityResources />
     </div>
   );
