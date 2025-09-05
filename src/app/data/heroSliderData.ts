@@ -8,7 +8,7 @@ export const heroSliderData: SlideData[] = [
     description:
       'Profesionales de sistemas y tecnología en Galicia. Únete a nuestros meetups, charlas y eventos de networking.',
     ctaText: 'Únete a la Comunidad',
-    ctaLink: '/community',
+    ctaLink: 'https://t.me/Gallegarmy',
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const heroSliderData: SlideData[] = [
     description:
       'Descubre las últimas charlas técnicas, workshops y eventos de networking en Santiago de Compostela y toda Galicia.',
     ctaText: 'Ver Eventos',
-    ctaLink: '/timeline',
+    ctaLink: 'https://www.meetup.com/es-ES/sysarmy-galicia/',
   },
   {
     id: 3,
@@ -26,6 +26,6 @@ export const heroSliderData: SlideData[] = [
     description:
       'Accede a recursos exclusivos, presentaciones de meetups anteriores y contenido técnico creado por la comunidad.',
     ctaText: 'Explorar Recursos',
-    ctaLink: '/resources',
+    ctaLink: 'https://github.com/Gallegarmy',
   },
 ];

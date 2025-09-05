@@ -19,7 +19,7 @@ export const socialMedia: SocialMedia[] = [
   {
     id: '4',
     name: 'Instagram',
-    url: 'https://www.instagram.com/sysarmy_galicia/',
+    url: 'https://www.instagram.com/sysarmy.galicia/',
   },
   {
     id: '5',
