@@ -10,8 +10,8 @@ export const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer role="contentinfo" className="border-t-2 white flex flex-col items-center justify-center h-40">
-      <div className="text-base  m-2 md:m-4">
+    <footer role="contentinfo" className="border-t white flex flex-col items-center justify-center h-40">
+      <div className="text-sm md:text-base  m-2 md:m-4">
         <Link href="/">Sysarmy {year}</Link> -{' '}
         <a href="mailto:root@sysarmy.com" className="text-white">
           root@sysarmy.com
@@ -27,7 +27,10 @@ export const Footer = () => {
             return (
               <li key={id}>
                 <a href={url} target="_blank" rel="noopener noreferrer" aria-label={name}>
-                  <FontAwesomeIcon icon={icon} className="w-5 md:w-8" />
+                  <FontAwesomeIcon
+                    icon={icon}
+                    className="w-4 md:w-5 transition-colors duration-300 hover:text-gray-400"
+                  />
                 </a>
               </li>
             );

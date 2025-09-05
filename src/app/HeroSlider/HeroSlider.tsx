@@ -57,11 +57,13 @@ export function HeroSlider({ slides, autoRotateInterval = 5000, logo }: HeroSlid
           {currentSlideData.title}
         </h1>
 
-        <p className="mb-8 max-w-2xl text-lg md:text-xl lg:text-2xl">{currentSlideData.description}</p>
+        <p className="mb-8 max-w-2xl text-base md:text-xl lg:text-2xl">{currentSlideData.description}</p>
 
         <Link
           href={currentSlideData.ctaLink}
-          className="rounded-lg bg-blue-600 px-8 py-4 text-lg font-semibold text-white transition-colors duration-300 hover:bg-blue-700"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-lg bg-sysarmy-blue border-sysarmy-blue px-7 py-3 text-lg font-semibold text-white transition-colors duration-300 hover:bg-sysarmy-blue-hover"
         >
           {currentSlideData.ctaText}
         </Link>
@@ -73,8 +75,8 @@ export function HeroSlider({ slides, autoRotateInterval = 5000, logo }: HeroSlid
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`h-3 w-3 rounded-full transition-colors duration-300 ${
-                index === currentSlide ? 'bg-white' : 'bg-white bg-opacity-50'
+              className={`h-3 w-3 rounded-full transition-colors duration-300 cursor-pointer ${
+                index === currentSlide ? 'bg-white' : 'bg-white opacity-50'
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />
