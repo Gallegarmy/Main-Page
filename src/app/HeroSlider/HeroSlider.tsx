@@ -63,7 +63,7 @@ export function HeroSlider({ slides, autoRotateInterval = 5000, logo }: HeroSlid
           href={currentSlideData.ctaLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-sysarmy-blue border-sysarmy-blue hover:bg-sysarmy-blue-hover rounded-lg px-7 py-3 text-lg font-semibold text-white transition-colors duration-300"
+          className="border-2 border-white bg-black px-4 py-2 font-semibold md:px-8 md:py-4 md:text-lg"
         >
           {currentSlideData.ctaText}
         </Link>
