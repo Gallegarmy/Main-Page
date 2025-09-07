@@ -5,9 +5,9 @@ import { friendCommunitiesData } from './data';
 
 export const FriendCommunities = () => {
   return (
-    <section className="flex flex-col justify-center px-4 py-16 bg-black">
-      <h2 className="text-center text-3xl font-bold text-white mb-12">Friend Communities</h2>
-      <div className="flex flex-wrap justify-center gap-6 max-w-6xl mx-auto">
+    <section className="flex flex-col justify-center bg-black px-4 py-16">
+      <h2 className="mb-12 text-center text-3xl font-bold text-white">Friend Communities</h2>
+      <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-6">
         {friendCommunitiesData.map((community) => {
           const isExternalLink = community.websiteUrl.startsWith('http');
 
@@ -17,11 +17,11 @@ export const FriendCommunities = () => {
                 href={community.websiteUrl}
                 target={isExternalLink ? '_blank' : '_self'}
                 rel={isExternalLink ? 'noopener noreferrer' : undefined}
-                className="block bg-[#ffffff1a] rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden h-full"
+                className="block h-full overflow-hidden rounded-lg bg-[#ffffff1a] shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
               >
-                <div className="p-6 flex flex-col h-full">
-                  <div className="flex justify-center mb-4">
-                    <div className="w-20 h-20 relative">
+                <div className="flex h-full flex-col p-6">
+                  <div className="mb-4 flex justify-center">
+                    <div className="relative h-20 w-20">
                       <Image
                         src={community.logoPath}
                         alt={`${community.name} logo`}
@@ -31,8 +31,8 @@ export const FriendCommunities = () => {
                       />
                     </div>
                   </div>
-                  <h3 className="text-xl font-bold text-white text-center mb-3">{community.name}</h3>
-                  <p className="text-gray-300 text-sm text-center leading-relaxed flex-1">{community.description}</p>
+                  <h3 className="mb-3 text-center text-xl font-bold text-white">{community.name}</h3>
+                  <p className="flex-1 text-center text-sm leading-relaxed text-gray-300">{community.description}</p>
                 </div>
               </a>
             </article>

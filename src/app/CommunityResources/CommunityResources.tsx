@@ -7,8 +7,8 @@ import { communityResourcesData } from './data';
 
 export const CommunityResources = () => {
   return (
-    <div className="flex justify-center w-full px-4">
-      <ul className="grid grid-cols-1 justify-items-center lg:max-w-[1200px] md:grid-cols-2 gap-4 md:gap-6 my-24">
+    <div className="flex w-full justify-center px-4">
+      <ul className="my-24 grid grid-cols-1 justify-items-center gap-4 md:grid-cols-2 md:gap-6 lg:max-w-[1200px]">
         {communityResourcesData.map((element) => {
           const icon: IconProp | undefined = communityIconMap[element.icon];
           const isExternalLink = element.link.startsWith('http');
@@ -19,13 +19,13 @@ export const CommunityResources = () => {
                 href={element.link}
                 target={isExternalLink ? '_blank' : '_self'}
                 rel={isExternalLink ? 'noopener noreferrer' : undefined}
-                className="border border-white w-full lg:min-w-full lg:w-[550px] min-h-[180px] sm:min-h-[200px] flex flex-col p-4 sm:p-6 md:p-8 cursor-pointer "
+                className="flex min-h-[180px] w-full cursor-pointer flex-col border border-white p-4 sm:min-h-[200px] sm:p-6 md:p-8 lg:w-[550px] lg:min-w-full"
               >
-                <div className="flex-shrink-0 w-9 h-9  md:w-10 md:h-10 flex items-center justify-center mb-4">
-                  {icon && <FontAwesomeIcon icon={icon} className="w-full h-full text-white" />}
+                <div className="mb-4 flex h-9 w-9 flex-shrink-0 items-center justify-center md:h-10 md:w-10">
+                  {icon && <FontAwesomeIcon icon={icon} className="h-full w-full text-white" />}
                 </div>
-                <h5 className="text-xl sm:text-2xl font-bold mb-2">{element.title}</h5>
-                <p className="text-sm sm:text-base leading-relaxed">{element.description}</p>
+                <h5 className="mb-2 text-xl font-bold sm:text-2xl">{element.title}</h5>
+                <p className="text-sm leading-relaxed sm:text-base">{element.description}</p>
               </a>
             </li>
           );

@@ -49,11 +49,11 @@ export function HeroSlider({ slides, autoRotateInterval = 5000, logo }: HeroSlid
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center text-white">
         {logo && (
           <div className="mb-8">
-            <Image src={logo} alt="Community Logo" className="w-52 h-auto" width={300} height={300} />
+            <Image src={logo} alt="Community Logo" className="h-auto w-52" width={300} height={300} />
           </div>
         )}
 
-        <h1 className="mb-6 max-w-4xl text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
+        <h1 className="mb-6 max-w-4xl text-4xl leading-tight font-bold md:text-5xl lg:text-6xl">
           {currentSlideData.title}
         </h1>
 
@@ -63,7 +63,7 @@ export function HeroSlider({ slides, autoRotateInterval = 5000, logo }: HeroSlid
           href={currentSlideData.ctaLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-lg bg-sysarmy-blue border-sysarmy-blue px-7 py-3 text-lg font-semibold text-white transition-colors duration-300 hover:bg-sysarmy-blue-hover"
+          className="bg-sysarmy-blue border-sysarmy-blue hover:bg-sysarmy-blue-hover rounded-lg px-7 py-3 text-lg font-semibold text-white transition-colors duration-300"
         >
           {currentSlideData.ctaText}
         </Link>
@@ -75,7 +75,7 @@ export function HeroSlider({ slides, autoRotateInterval = 5000, logo }: HeroSlid
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`h-3 w-3 rounded-full transition-colors duration-300 cursor-pointer ${
+              className={`h-3 w-3 cursor-pointer rounded-full transition-colors duration-300 ${
                 index === currentSlide ? 'bg-white' : 'bg-white opacity-50'
               }`}
               aria-label={`Go to slide ${index + 1}`}

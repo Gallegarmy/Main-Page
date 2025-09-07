@@ -10,15 +10,15 @@ export const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer role="contentinfo" className="border-t white flex flex-col items-center justify-center h-40">
-      <div className="text-sm md:text-base  m-2 md:m-4">
+    <footer role="contentinfo" className="white flex h-40 flex-col items-center justify-center border-t">
+      <div className="m-2 text-sm md:m-4 md:text-base">
         <Link href="/">Sysarmy {year}</Link> -{' '}
         <a href="mailto:root@sysarmy.com" className="text-white">
           root@sysarmy.com
         </a>
       </div>
       <nav aria-label="Social media" className="mt-3">
-        <ul className="flex flex-row gap-4 md:gap-7 items-center">
+        <ul className="flex flex-row items-center gap-4 md:gap-7">
           {socialMedia.map(({ id, name, url }) => {
             const icon: IconProp | undefined = iconMap[name.toLowerCase()];
 
@@ -29,7 +29,7 @@ export const Footer = () => {
                 <a href={url} target="_blank" rel="noopener noreferrer" aria-label={name}>
                   <FontAwesomeIcon
                     icon={icon}
-                    className="w-4 md:w-5 transition-colors duration-300 hover:text-gray-400"
+                    className="w-4 transition-colors duration-300 hover:text-gray-400 md:w-5"
                   />
                 </a>
               </li>
