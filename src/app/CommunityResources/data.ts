@@ -27,6 +27,6 @@ export const communityResourcesData: CommunityResourcesInterface[] = [
     icon: 'clock',
     title: 'Timeline',
     description: "Photos from Sysarmy Galicia's events over the years.",
-    link: 'https://cloud.sysarmy.galicia.dev/apps/photos/public/c7hGm8E9Mz9x02w1FOVxNpZD4LD85Rvl',
+    link: '/timeline',
   },
 ];
