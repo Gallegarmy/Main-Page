@@ -1,0 +1,21 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+
+export const Header = () => {
+  return (
+    <div className="container mx-auto my-0 p-3">
+      <Link href="/">
+        <Image
+          height={100}
+          width={100}
+          src="/assets/communities/sysarmy-galicia/sysarmy-galicia-logo.png"
+          alt="Sysarmy Galicia Logo"
+          className="w-16 md:w-24"
+        />
+      </Link>
+    </div>
+  );
+};
+
+export default Header;
