@@ -10,9 +10,13 @@ export const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer role="contentinfo" className="white flex h-40 flex-col items-center justify-center border-t">
+    <footer role="contentinfo" className="white flex h-40 flex-col items-center justify-center border-t text-center">
       <div className="m-2 text-sm md:m-4 md:text-base">
         <Link href="/">Sysarmy {year}</Link> -{' '}
+        <Link href="/code-of-conduct" className="text-white transition-colors duration-300 hover:text-gray-400">
+          Code of Conduct
+        </Link>{' '}
+        -{' '}
         <a href="mailto:root@sysarmy.com" className="text-white">
           root@sysarmy.com
         </a>
