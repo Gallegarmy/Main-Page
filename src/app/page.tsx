@@ -2,10 +2,11 @@ import type { Metadata } from 'next';
 
 import { CommunityResources } from './CommunityResources/CommunityResources';
 import { FriendCommunities } from './FriendCommunities/FriendCommunities';
+import { Header } from './Header/Header';
 import { HeroSlider } from './HeroSlider/HeroSlider';
+import { heroSliderData } from './HeroSlider/data';
 import { LareiraSection } from './LareiraSection/LareiraSection';
 import { lareiraSectionData } from './LareiraSection/data';
-import { heroSliderData } from './data/heroSliderData';
 
 export const metadata: Metadata = {
   title: 'Home - Sysarmy Galicia',
@@ -26,6 +27,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="min-h-screen">
+      <Header />
       <HeroSlider slides={heroSliderData} logo="/assets/communities/sysarmy-galicia/sysarmy-galicia-logo.png" />
       <CommunityResources />
       <FriendCommunities />

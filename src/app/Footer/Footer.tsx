@@ -1,12 +1,17 @@
+'use client';
+
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { iconMap } from './Icons';
 import { socialMedia } from './data';
 
 export const Footer = () => {
+  const { t } = useTranslation('common');
+
   const year = new Date().getFullYear();
 
   return (
@@ -14,11 +19,11 @@ export const Footer = () => {
       <div className="m-2 text-sm md:m-4 md:text-base">
         <Link href="/">Sysarmy {year}</Link> -{' '}
         <Link href="/code-of-conduct" className="text-white transition-colors duration-300 hover:text-gray-400">
-          Code of Conduct
+          {t('footer.codeOfConduct')}
         </Link>{' '}
         -{' '}
         <a href="mailto:root@sysarmy.com" className="text-white">
-          root@sysarmy.com
+          {t('footer.email')}
         </a>
       </div>
       <nav aria-label="Social media" className="mt-3">

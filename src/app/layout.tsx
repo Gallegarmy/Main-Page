@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 
+import { I18nProvider } from '../components/I18nProvider';
 import { Footer } from './Footer/Footer';
 import './globals.css';
 
@@ -61,8 +62,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {children}
-        <Footer />
+        <I18nProvider>
+          {children}
+          <Footer />
+        </I18nProvider>
       </body>
     </html>
   );

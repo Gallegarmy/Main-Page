@@ -1,14 +1,12 @@
-export interface SlideData {
+export interface SlideDataStatic {
   id: number;
   image: string;
-  title: string;
-  description: string;
-  ctaText: string;
   ctaLink: string;
+  slideKey: 'slide1' | 'slide2' | 'slide3';
 }
 
 export interface HeroSliderProps {
-  slides: SlideData[];
+  slides: SlideDataStatic[];
   autoRotateInterval?: number;
   logo?: string;
 }

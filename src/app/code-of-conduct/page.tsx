@@ -1,36 +1,28 @@
-import type { Metadata } from 'next';
+'use client';
+
 import Image from 'next/image';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { Header } from '../Header';
 import { codeOfConductSections } from './data';
 
-export const metadata: Metadata = {
-  title: 'Code of Conduct - Sysarmy Galicia',
-  description:
-    'Read the Sysarmy Galicia code of conduct. Learn about our rules and values to maintain a respectful and professional environment in our community.',
-  openGraph: {
-    title: 'Code of Conduct - Sysarmy Galicia',
-    description:
-      'Read the Sysarmy Galicia code of conduct. Learn about our rules and values to maintain a respectful and professional environment in our community.',
-  },
-  twitter: {
-    title: 'Code of Conduct - Sysarmy Galicia',
-    description:
-      'Read the Sysarmy Galicia code of conduct. Learn about our rules and values to maintain a respectful and professional environment in our community.',
-  },
-};
-
 export default function CodeOfConduct() {
+  const { t } = useTranslation('common');
+
   return (
     <>
       <Header />
       <div className="container mx-auto my-0 p-3">
         <section className="mb-4 grid gap-3 md:grid-cols-2 md:gap-16">
           <div className="self-center">
-            <h1 className="pb-1.5 text-center text-3xl font-bold md:text-left md:text-6xl">Sysarmy </h1>
-            <h1 className="pb-1.5 text-center text-3xl font-bold md:text-left md:text-6xl">Code Of Conduct</h1>
-            <p className="text-md text-center md:text-left md:text-lg">Latest updated: 13 November 2025</p>
+            <h1 className="pb-1.5 text-center text-3xl font-bold md:text-left md:text-6xl">
+              {t('pages.codeOfConduct.sysarmy')}
+            </h1>
+            <h1 className="pb-1.5 text-center text-3xl font-bold md:text-left md:text-6xl">
+              {t('pages.codeOfConduct.title')}
+            </h1>
+            <p className="text-md text-center md:text-left md:text-lg">{t('pages.codeOfConduct.lastUpdated')}</p>
           </div>
           <div className="flex justify-evenly md:grid md:justify-center">
             <Image
@@ -49,13 +41,13 @@ export default function CodeOfConduct() {
             />
           </div>
         </section>
-        <section className="">
-          {codeOfConductSections.map((element) => (
-            <div key={element.id} className="mb-11">
-              <h3 className="mb-3 text-center text-3xl font-bold md:text-justify md:text-4xl">{element.title}</h3>
+        <section>
+          {codeOfConductSections.map((section) => (
+            <div key={section.id} className="mb-11">
+              <h3 className="mb-3 text-center text-3xl font-bold md:text-justify md:text-4xl">{t(section.titleKey)}</h3>
               <ul className="list-disc pl-6">
-                {element.rules.map((rule) => (
-                  <li key={rule.id}>{rule.text}</li>
+                {section.rules.map((rule) => (
+                  <li key={rule}>{t(`codeOfConduct.${section.id}.${rule}`)}</li>
                 ))}
               </ul>
             </div>

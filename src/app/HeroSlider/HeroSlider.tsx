@@ -1,12 +1,20 @@
 'use client';
 
+import { SlideDataStatic } from '@/types/HeroSlider';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
-import { HeroSliderProps } from '../../types/HeroSlider';
+interface HeroSliderProps {
+  slides: SlideDataStatic[];
+  autoRotateInterval?: number;
+  logo?: string;
+}
 
 export function HeroSlider({ slides, autoRotateInterval = 5000, logo }: HeroSliderProps) {
+  const { t } = useTranslation('common');
+
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -54,10 +62,12 @@ export function HeroSlider({ slides, autoRotateInterval = 5000, logo }: HeroSlid
         )}
 
         <h1 className="mb-6 max-w-4xl text-4xl leading-tight font-bold md:text-5xl lg:text-6xl">
-          {currentSlideData.title}
+          {t(`hero.${currentSlideData.slideKey}.title`)}
         </h1>
 
-        <p className="mb-8 max-w-2xl text-base md:text-xl lg:text-2xl">{currentSlideData.description}</p>
+        <p className="mb-8 max-w-2xl text-base md:text-xl lg:text-2xl">
+          {t(`hero.${currentSlideData.slideKey}.description`)}
+        </p>
 
         <Link
           href={currentSlideData.ctaLink}
@@ -65,7 +75,7 @@ export function HeroSlider({ slides, autoRotateInterval = 5000, logo }: HeroSlid
           rel="noopener noreferrer"
           className="border-2 border-white bg-black px-4 py-2 font-semibold md:px-8 md:py-4 md:text-lg"
         >
-          {currentSlideData.ctaText}
+          {t(`hero.${currentSlideData.slideKey}.ctaText`)}
         </Link>
       </div>
 
