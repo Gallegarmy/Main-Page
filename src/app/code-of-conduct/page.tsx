@@ -21,7 +21,9 @@ export default function CodeOfConduct() {
             <h1 className="pb-1.5 text-center text-3xl font-bold md:text-left md:text-6xl">
               {t('codeOfConduct.meta.title')}
             </h1>
-            <p className="text-md text-center md:text-left md:text-lg">{t('codeOfConduct.meta.lastUpdated')}</p>
+            <p className="text-md text-center md:text-left md:text-lg">
+              {t('codeOfConduct.meta.lastUpdated', { date: 2025 })}
+            </p>
           </div>
           <div className="flex justify-evenly md:grid md:justify-center">
             <Image
