@@ -1,42 +1,135 @@
 {
-  "codeOfConduct.general.title": "Xeral",
-  "codeOfConduct.general.rule1": "A verdade é que non nos importa nin a túa relixión, as túas ideas políticas, a túa cor, as túas crenzas, as túas preferencias sexuais ou alimenticias. Así que non hai razón no mundo para armar follón por iso.",
-  "codeOfConduct.general.rule2": "O que se cabrea, perde. Se hai unha movida e ves que estás empezando a perder os papeis, mellor conta ata 1024 e pasa do tema, nada é tan importante de verdade.",
-  "codeOfConduct.general.rule3": "Calquera charla será benvida sempre e cando se manteña de forma amigable, amena e civilizada. En canto se perda algunha destas cousas, a conversa debe cortarse.",
-  "codeOfConduct.general.rule4": "Este grupo está aberto para calquera persoa que non estea relacionada coa informática e que teña ganas de charlar e aprender sobre sistemas.",
-  "codeOfConduct.general.rule5": "Coñecer a netiquette é a mellor maneira de levarse ben na rede. Non está de máis repasala de vez en cando.",
-  "codeOfConduct.general.rule6": "Somos un grupo de profesionais, e comportámonos como tal. Considérase unha falta de profesionalismo calquera acción que teña como obxectivo molestar a outro membro ou ao grupo (insultos, hackeos, spams, etc.), xa sexa estando presente ou ausente, máis alá de calquera rollo interno que haxa entre as partes.",
-  "codeOfConduct.telegram.title": "Sobre o grupo de Telegram",
-  "codeOfConduct.telegram.rule1": "Neste mundo moderno, é preferible estar en servizos de mensaxería modernos (xa deixade morrer ao IRC). Con todo, estar preto como comunidade non implica que haxa unha proximidade persoal entre os membros, así que se queres mandar unha mensaxe privada, asegúrate antes de ter o seu consentimento para non incomodar aos novos.",
-  "codeOfConduct.collaboration.title": "Sobre a colaboración",
-  "codeOfConduct.collaboration.rule1": "Sempre estamos buscando xente disposta a botar unha man coa comunidade. Non preguntes se podes colaborar, pregunta como.",
-  "codeOfConduct.collaboration.rule2": "Ser voluntario leva unha responsabilidade e esperamos que se tome en serio.",
-  "codeOfConduct.collaboration.rule3": "Aceptamos calquera tipo de donación de hardware ou calquera cousa que nos poida axudar en eventos e/ou para organizar novos.",
-  "codeOfConduct.sanctions.title": "Sobre as sancións",
-  "codeOfConduct.sanctions.rule1": "Incumprir as normas de convivencia deste código implica sancións. Estas son decididas polas partes afectadas debido ás infraccións cometidas. Aínda que non se lle pecha a porta a ninguén, é importante acatar as sancións cando sexan impostas, para que este grupo siga sendo un lugar no que queramos estar.",
-  "footer.codeOfConduct": "Código de Conduta",
-  "footer.email": "root@sysarmy.com",
-  "header.logo": "Logo de Sysarmy Galicia",
-  "hero.slide1.ctaText": "Únete á Comunidade",
-  "hero.slide1.description": "Profesionais de sistemas e tecnoloxia en Galicia. unete aos nosos meetups, charlas e eventos de networking.",
-  "hero.slide1.title": "Benvido a Sysarmy Galicia",
-  "hero.slide2.ctaText": "Ver Eventos",
-  "hero.slide2.description": "Descobre as últimas charlas técnicas, workshops e eventos de networking en Santiago de Compostela e toda Galicia.",
-  "hero.slide2.title": "Próximos Eventos e Meetups",
-  "hero.slide3.ctaText": "Explorar Recursos",
-  "hero.slide3.description": "Accede a recursos exclusivos, presentacións de meetups anteriores e contido técnico creado pola comunidade.",
-  "hero.slide3.title": "Recursos e Coñecemento",
-  "language.english": "Ingles",
-  "language.galician": "Galego",
-  "language.selector": "Idioma",
-  "language.spanish": "Español",
-  "pages.codeOfConduct.lastUpdated": "Última actualización: 13 de novembro de 2025",
-  "pages.codeOfConduct.sysarmy": "Sysarmy",
-  "pages.codeOfConduct.title": "Código de Conduta",
-  "pages.home.description": "Benvido a Sysarmy Galicia, a comunidade de tecnoloxía e sistemas máis activa de Galicia. Únete a eventos, recursos e networking con profesionais da industria.",
-  "pages.home.title": "Inicio - Sysarmy Galicia",
-  "pages.timeline.title": "Liña de Tempo - Sysarmy Galicia",
-  "site.description": "Comunidade de tecnoloxia e sistemas en Galicia",
-  "site.keywords": "sysarmy, galicia, tecnoloxia, sistemas, comunidade, desenvolvedores, devops, sysadmin",
-  "site.title": "Sysarmy Galicia"
+  "meta": {
+    "title": "Sysarmy Galicia",
+    "description": "Comunidade de tecnoloxía e sistemas en Galicia",
+    "keywords": "sysarmy, galicia, tecnoloxía, sistemas, comunidade, desenvolvedores, devops, sysadmin"
+  },
+  "languages": {
+    "label": "Idioma",
+    "en": "Inglés",
+    "gl": "Galego",
+    "es": "Español"
+  },
+  "layout": {
+    "header": {
+      "logoAlt": "Logo de Sysarmy Galicia"
+    },
+    "footer": {
+      "codeOfConduct": "Código de Conduta",
+      "contactEmail": "root@sysarmy.com",
+      "copyright": "Sysarmy"
+    }
+  },
+  "actions": {
+    "join": "Únete á Comunidade",
+    "viewEvents": "Ver Eventos",
+    "explore": "Explorar Recursos"
+  },
+  "home": {
+    "meta": {
+      "title": "Inicio - Sysarmy Galicia",
+      "description": "Benvido a Sysarmy Galicia, a comunidade de tecnoloxía e sistemas máis activa de Galicia. Únete a eventos, recursos e networking con profesionais do sector."
+    },
+    "hero": {
+      "welcome": {
+        "title": "Benvido a Sysarmy Galicia",
+        "description": "Profesionais de sistemas e tecnoloxía en Galicia. Únete aos nosos meetups, charlas e eventos de networking.",
+        "ctaText": "Únete á comunidade"
+      },
+      "events": {
+        "title": "Próximos Eventos e Meetups",
+        "description": "Descobre as últimas charlas técnicas, talleres e eventos de networking en Galicia.",
+        "ctaText": "Ver próximos eventos"
+      },
+      "resources": {
+        "title": "Recursos e Coñecemento",
+        "description": "Accede a recursos exclusivos, presentacións de meetups anteriores e contido técnico creado pola comunidade.",
+        "ctaText": "Explorar os nosos recursos"
+      }
+    },
+    "communityResources": {
+      "adminCanas": {
+        "title": "#adminCañas",
+        "description": "Reunímonos o primeiro sábado de cada mes para compartir coñecemento e aprender de forma práctica."
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Accede a presentacións, recursos e materiais compartidos pola comunidade no noso repositorio de GitHub."
+      },
+      "workshops": {
+        "title": "Talleres",
+        "description": "Sesións prácticas para profundar os teus coñecementos en diversos temas de tecnoloxía e sistemas."
+      },
+      "timeline": {
+        "title": "Cronoloxía",
+        "description": "Fotos dos eventos de Sysarmy Galicia ao longo dos anos."
+      }
+    },
+    "communities": {
+      "title": "Comunidades Amigas",
+      "corunaWtf": {
+        "title": "Coruña WTF",
+        "description": "Charlas web mensuais cunha comunidade amigable."
+      },
+      "pythonCoruna": {
+        "title": "Python Coruña",
+        "description": "O hub da Coruña para amantes e aprendices de Python."
+      },
+      "gpul": {
+        "title": "GPUL",
+        "description": "Impulsando código aberto, tecnoloxía e colaboración en Galicia."
+      },
+      "aIndustriosa": {
+        "title": "A Industriosa",
+        "description": "Onde makers e comunidades transforman ideas en realidade."
+      }
+    },
+    "lareiraConf": {
+      "title": "LaReira Conf",
+      "description": "Como comunidade, organizamos LareiraConf, o evento tecnolóxico que reúne a profesionais de IT de Galicia.",
+      "ctaText": "Saber máis"
+    }
+  },
+  "timeline": {
+    "title": "Cronoloxía de Sysarmy Galicia",
+    "description": "Fotos dos eventos de Sysarmy Galicia ao longo dos anos."
+  },
+  "codeOfConduct": {
+    "meta": {
+      "title": "Código de Conduta",
+      "lastUpdated": "Última actualización: {{date}}",
+      "shortTitle": "CdC"
+    },
+    "general": {
+      "title": "Xeral",
+      "rules": [
+        "A verdade é que nos dá igual a túa relixión, as túas ideas políticas, a túa cor, as túas crenzas, as túas preferencias sexuais ou dietéticas. Así que non hai razón no mundo para armar follón por iso.",
+        "Se te enfadas, perdes. Se hai un problema e ves que empezas a perder os nervios, mellor conta ata 1024 e pasa do tema, nada é realmente tan importante.",
+        "Calquera conversa será benvida sempre que se manteña amigable, agradable e civilizada. En canto se perda algunha destas cousas, hai que cortar a conversa.",
+        "Este grupo está aberto a calquera persoa non relacionada coa informática que queira falar e aprender sobre sistemas.",
+        "Coñecer a netiqueta é a mellor maneira de levarse ben na rede. Non está de máis revisala de cando en vez.",
+        "Somos un grupo de profesionais, e comportámonos como tales. Calquera acción dirixida a molestar a outro membro ou ao grupo (insultos, hacks, spam, etc.) considérase pouco profesional, estea presente ou ausente, máis aló de calquera asunto interno entre as partes."
+      ]
+    },
+    "telegram": {
+      "title": "Sobre o grupo de Telegram",
+      "rules": [
+        "Neste mundo moderno, é preferible estar en servizos de mensaxería modernos (por favor, deixade morrer a IRC). Con todo, estar preto como comunidade non implica proximidade persoal entre membros, así que se queres enviar unha mensaxe privada, asegúrate primeiro de ter o seu consentimento para non incomodar aos recén chegados."
+      ]
+    },
+    "collaboration": {
+      "title": "Sobre a colaboración",
+      "rules": [
+        "Sempre estamos buscando xente disposta a botar unha man coa comunidade. Non preguntes se podes colaborar, pregunta como.",
+        "Ser voluntario conleva responsabilidade e esperamos que se tome en serio.",
+        "Aceptamos calquera tipo de doazón de hardware ou calquera cousa que nos poida axudar en eventos e/ou para organizar novos."
+      ]
+    },
+    "sanctions": {
+      "title": "Sobre as sancións",
+      "rules": [
+        "O incumprimento das normas de convivencia deste código implica sancións. Estas son decididas polas partes afectadas debido ás infraccións cometidas. Aínda que a porta non está pechada para ninguén, é importante respectar as sancións cando se impoñen, para que este grupo siga sendo un lugar onde queremos estar."
+      ]
+    }
+  }
 }

@@ -19,11 +19,11 @@ export const Footer = () => {
       <div className="m-2 text-sm md:m-4 md:text-base">
         <Link href="/">Sysarmy {year}</Link> -{' '}
         <Link href="/code-of-conduct" className="text-white transition-colors duration-300 hover:text-gray-400">
-          {t('footer.codeOfConduct')}
+          {t('layout.footer.codeOfConduct')}
         </Link>{' '}
         -{' '}
         <a href="mailto:root@sysarmy.com" className="text-white">
-          {t('footer.email')}
+          {t('layout.footer.contactEmail')}
         </a>
       </div>
       <nav aria-label="Social media" className="mt-3">

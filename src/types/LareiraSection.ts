@@ -6,9 +6,7 @@ export interface LareiraImage {
 
 export interface LareiraSectionData {
   logoImage: string;
-  title: string;
-  description: string;
-  ctaText: string;
+  name: string;
   ctaLink: string;
   images: LareiraImage[];
 }

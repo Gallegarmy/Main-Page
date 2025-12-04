@@ -1,12 +1,17 @@
+'use client';
+
 import Image from 'next/image';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { friendCommunitiesData } from './data';
 
 export const FriendCommunities = () => {
+  const { t } = useTranslation('common');
+
   return (
     <section className="flex flex-col justify-center bg-black px-4 py-16">
-      <h2 className="mb-12 text-center text-3xl font-bold text-white">Friend Communities</h2>
+      <h2 className="mb-12 text-center text-3xl font-bold text-white">{t('home.communities.title')}</h2>
       <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-6">
         {friendCommunitiesData.map((community) => {
           const isExternalLink = community.websiteUrl.startsWith('http');
@@ -31,8 +36,12 @@ export const FriendCommunities = () => {
                       />
                     </div>
                   </div>
-                  <h3 className="mb-3 text-center text-xl font-bold text-white">{community.name}</h3>
-                  <p className="flex-1 text-center text-sm leading-relaxed text-gray-300">{community.description}</p>
+                  <h3 className="mb-3 text-center text-xl font-bold text-white">
+                    {t(`home.communities.${community.name}.title`)}
+                  </h3>
+                  <p className="flex-1 text-center text-sm leading-relaxed text-gray-300">
+                    {t(`home.communities.${community.name}.description`)}
+                  </p>
                 </div>
               </a>
             </article>

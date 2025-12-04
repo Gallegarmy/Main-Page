@@ -3,5 +3,9 @@ export type CodeOfConductSectionId = 'general' | 'telegram' | 'collaboration' | 
 export interface CodeOfConductSection {
   id: CodeOfConductSectionId;
   titleKey: string;
-  rules: string[];
+}
+
+export interface CodeOfConductSectionData {
+  title?: string;
+  rules?: string[];
 }

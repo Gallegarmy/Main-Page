@@ -2,7 +2,7 @@ export interface SlideDataStatic {
   id: number;
   image: string;
   ctaLink: string;
-  slideKey: 'slide1' | 'slide2' | 'slide3';
+  slideKey: 'welcome' | 'events' | 'resources';
 }
 
 export interface HeroSliderProps {

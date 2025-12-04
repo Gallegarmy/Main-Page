@@ -1,7 +1,6 @@
 export interface CommunityResourcesInterface {
   id: string;
   icon: string;
-  title: string;
-  description: string;
+  name: string;
   link: string;
 }

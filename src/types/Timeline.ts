@@ -7,6 +7,6 @@ export interface TimelineCity {
 export interface TimelineEntry {
   id: string;
   image: string;
-  month: string;
   year: number;
+  cloudUrl: string;
 }

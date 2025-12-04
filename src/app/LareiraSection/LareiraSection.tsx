@@ -4,8 +4,11 @@ import { LareiraSectionProps } from '@/types/LareiraSection';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export function LareiraSection({ data, autoRotateInterval = 4000 }: LareiraSectionProps) {
+  const { t } = useTranslation('common');
+
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -47,21 +50,23 @@ export function LareiraSection({ data, autoRotateInterval = 4000 }: LareiraSecti
           <div className="mb-7 flex h-full justify-center">
             <Image
               src={data.logoImage}
-              alt={data.title}
+              alt={t(`home.${data.name}.title`)}
               width={300}
               height={50}
               className="object-cover"
               quality={85}
             />
           </div>
-          <p className="mx-auto mb-8 max-w-2xl text-base leading-relaxed md:text-lg lg:text-xl">{data.description}</p>
+          <p className="mx-auto mb-8 max-w-2xl text-base leading-relaxed md:text-lg lg:text-xl">
+            {t(`home.${data.name}.description`)}
+          </p>
           <Link
             href={data.ctaLink}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block border-2 border-white bg-black px-4 py-2 font-semibold md:px-8 md:py-4 md:text-lg"
           >
-            {data.ctaText}
+            {t(`home.${data.name}.ctaText`)}
           </Link>
         </div>
       </div>

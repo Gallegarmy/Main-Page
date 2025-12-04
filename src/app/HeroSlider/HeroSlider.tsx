@@ -62,11 +62,11 @@ export function HeroSlider({ slides, autoRotateInterval = 5000, logo }: HeroSlid
         )}
 
         <h1 className="mb-6 max-w-4xl text-4xl leading-tight font-bold md:text-5xl lg:text-6xl">
-          {t(`hero.${currentSlideData.slideKey}.title`)}
+          {t(`home.hero.${currentSlideData.slideKey}.title`)}
         </h1>
 
         <p className="mb-8 max-w-2xl text-base md:text-xl lg:text-2xl">
-          {t(`hero.${currentSlideData.slideKey}.description`)}
+          {t(`home.hero.${currentSlideData.slideKey}.description`)}
         </p>
 
         <Link
@@ -75,7 +75,7 @@ export function HeroSlider({ slides, autoRotateInterval = 5000, logo }: HeroSlid
           rel="noopener noreferrer"
           className="border-2 border-white bg-black px-4 py-2 font-semibold md:px-8 md:py-4 md:text-lg"
         >
-          {t(`hero.${currentSlideData.slideKey}.ctaText`)}
+          {t(`home.hero.${currentSlideData.slideKey}.ctaText`)}
         </Link>
       </div>
 

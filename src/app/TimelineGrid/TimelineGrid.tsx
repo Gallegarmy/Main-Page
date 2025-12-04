@@ -7,15 +7,15 @@ import { timelineData } from './data';
 
 export const TimelineGrid = () => {
   return (
-    <div className="mb-8">
+    <div className="mb-20">
       {timelineData.map((city: TimelineCity) => {
         if (!city?.timeline?.length) return null;
 
         return (
           <section key={city.id} className="px-3" aria-labelledby={`city-${city.id}`}>
             <div className="mx-0 my-8 flex items-baseline">
-              <FontAwesomeIcon icon={faLocationDot} className="mr-3 w-3" />
-              <h2 id={`city-${city.id}`} className="m-0 text-xl font-bold text-white">
+              <FontAwesomeIcon icon={faLocationDot} className="mr-3 h-6 w-6" />
+              <h2 id={`city-${city.id}`} className="m-0 text-2xl font-bold text-white">
                 {city.name}
               </h2>
             </div>
@@ -30,16 +30,23 @@ export const TimelineGrid = () => {
                   key={item.id}
                   className="flex w-fit flex-col justify-between justify-self-center rounded-xs border border-white p-3"
                 >
-                  <Image
-                    className="mb-2 h-full w-full object-cover lg:w-96"
-                    src={item.image}
-                    alt={`${city.name} event in ${item.month} ${item.year}`}
-                    width={500}
-                    height={500}
-                  />
-                  <span className="font-bold">
-                    {item.month}, {item.year}
-                  </span>
+                  <a
+                    href={item.cloudUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`View full photo gallery for ${city.name} ${item.year}`}
+                    className="flex flex-col transition-opacity hover:opacity-80"
+                  >
+                    <Image
+                      className="mb-2 h-full w-full object-cover lg:w-96"
+                      src={item.image}
+                      alt={`${city.name} event in ${item.year}`}
+                      width={384}
+                      height={384}
+                      sizes="(max-width: 1024px) 100vw, 384px"
+                    />
+                    <span className="text-xl font-bold">{item.year}</span>
+                  </a>
                 </li>
               ))}
             </ul>

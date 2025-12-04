@@ -2,10 +2,7 @@ import { LareiraSectionData } from '@/types/LareiraSection';
 
 export const lareiraSectionData: LareiraSectionData = {
   logoImage: '/assets/lareira-conf/lareira-logo.png',
-  title: 'LaReira Conf',
-  description:
-    'As a community, we organize LareiraConf, the tech event that brings together IT professionals from Galicia.',
-  ctaText: 'Know more',
+  name: 'lareiraConf',
   ctaLink: 'https://www.lareiraconf.es/',
   images: [
     {
