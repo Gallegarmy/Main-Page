@@ -1,10 +1,10 @@
 'use client';
 
+import { Header } from '@/components/layout/Header';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { Header } from '../Header';
-import { TimelineGrid } from '../TimelineGrid';
+import { TimelineGrid } from '../../components/sections/TimelineGrid';
 
 export default function Timeline() {
   const { t } = useTranslation('common');

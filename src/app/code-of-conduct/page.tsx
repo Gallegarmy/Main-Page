@@ -1,11 +1,11 @@
 'use client';
 
+import { Header } from '@/components/layout/Header';
 import { CodeOfConductSectionData } from '@/types/CodeOfConduct';
 import Image from 'next/image';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { Header } from '../Header';
 import { codeOfConductSections } from './data';
 
 export default function CodeOfConduct() {

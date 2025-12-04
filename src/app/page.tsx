@@ -1,12 +1,12 @@
+import { Header } from '@/components/layout/Header';
 import type { Metadata } from 'next';
 
-import { CommunityResources } from './CommunityResources/CommunityResources';
-import { FriendCommunities } from './FriendCommunities/FriendCommunities';
-import { Header } from './Header/Header';
-import { HeroSlider } from './HeroSlider/HeroSlider';
-import { heroSliderData } from './HeroSlider/data';
-import { LareiraSection } from './LareiraSection/LareiraSection';
-import { lareiraSectionData } from './LareiraSection/data';
+import { CommunityResources } from '../components/sections/CommunityResources/CommunityResources';
+import { FriendCommunities } from '../components/sections/FriendCommunities/FriendCommunities';
+import { HeroSlider } from '../components/sections/HeroSlider/HeroSlider';
+import { LareiraSection } from '../components/sections/LareiraSection/LareiraSection';
+import { heroSliderData } from '../data/HeroSliderData';
+import { lareiraSectionData } from '../data/LareiraSectionData';
 
 export const metadata: Metadata = {
   title: 'Home - Sysarmy Galicia',

@@ -1,9 +1,8 @@
+import { timelineData } from '@/data/TimelineGridData';
 import { TimelineCity } from '@/types/Timeline';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
-
-import { timelineData } from './data';
 
 export const TimelineGrid = () => {
   return (

@@ -1,5 +1,6 @@
 'use client';
 
+import { socialMedia } from '@/data/FooterData';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
@@ -7,7 +8,6 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { iconMap } from './Icons';
-import { socialMedia } from './data';
 
 export const Footer = () => {
   const { t } = useTranslation('common');

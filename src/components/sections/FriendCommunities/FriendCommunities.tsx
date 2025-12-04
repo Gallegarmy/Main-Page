@@ -1,10 +1,9 @@
 'use client';
 
+import { friendCommunitiesData } from '@/data/FriendCommunitiesData';
 import Image from 'next/image';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-
-import { friendCommunitiesData } from './data';
 
 export const FriendCommunities = () => {
   const { t } = useTranslation('common');

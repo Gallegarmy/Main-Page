@@ -1,12 +1,12 @@
 'use client';
 
+import { communityResourcesData } from '@/data/CommunityResourcesData';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { communityIconMap } from './Icons';
-import { communityResourcesData } from './data';
 
 export const CommunityResources = () => {
   const { t } = useTranslation('common');
