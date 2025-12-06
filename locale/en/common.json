@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "title": "Sysarmy Galicia",
+    "description": "Technology and systems community in Galicia",
+    "keywords": "sysarmy, galicia, technology, systems, community, developers, devops, sysadmin"
+  },
+  "languages": {
+    "label": "Language",
+    "en": "English",
+    "gl": "Galician",
+    "es": "Spanish"
+  },
+  "layout": {
+    "header": {
+      "logoAlt": "Sysarmy Galicia Logo"
+    },
+    "footer": {
+      "codeOfConduct": "Code of Conduct",
+      "contactEmail": "root@sysarmy.com",
+      "copyright": "Sysarmy"
+    }
+  },
+  "actions": {
+    "join": "Join the Community",
+    "viewEvents": "View Events",
+    "explore": "Explore Resources"
+  },
+  "home": {
+    "meta": {
+      "title": "Home - Sysarmy Galicia",
+      "description": "Welcome to Sysarmy Galicia, the most active technology and systems community in Galicia. Join events, resources and networking with industry professionals."
+    },
+    "hero": {
+      "welcome": {
+        "title": "Welcome to Sysarmy Galicia",
+        "description": "Systems and technology professionals in Galicia. Join our meetups, talks and networking events.",
+        "ctaText": "Join the community"
+      },
+      "events": {
+        "title": "Upcoming Events and Meetups",
+        "description": "Discover the latest technical talks, workshops and networking events in Galicia.",
+        "ctaText": "See upcoming events"
+      },
+      "resources": {
+        "title": "Resources and Knowledge",
+        "description": "Access exclusive resources, presentations from previous meetups and technical content created by the community.",
+        "ctaText": "Explore our resources"
+      }
+    },
+    "communityResources": {
+      "adminCanas": {
+        "title": "#adminCañas",
+        "description": "We met on the first Saturday of each month to share knowledge and learn in a practical way."
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Access presentations, resources, and materials shared by the community in our GitHub repository."
+      },
+      "workshops": {
+        "title": "Workshops",
+        "description": "Hands-on sessions to deepen your knowledge on various technology and systems topics."
+      },
+      "timeline": {
+        "title": "Timeline",
+        "description": "Photos from Sysarmy Galicia's events over the years."
+      }
+    },
+    "communities": {
+      "title": "Friend Communities",
+      "corunaWtf": {
+        "title": "Coruña WTF",
+        "description": "Fresh monthly web talks with a friendly community."
+      },
+      "pythonCoruna": {
+        "title": "Python Coruña",
+        "description": "A Coruña's hub for Python lovers and learners."
+      },
+      "gpul": {
+        "title": "GPUL",
+        "description": "Driving open source, tech, and collaboration in Galicia."
+      },
+      "aIndustriosa": {
+        "title": "A Industriosa",
+        "description": "Where makers and communities turn ideas into reality."
+      }
+    },
+    "lareiraConf": {
+      "title": "LaReira Conf",
+      "description": "As a community, we organize LareiraConf, the tech event that brings together IT professionals from Galicia.",
+      "ctaText": "Know more"
+    }
+  },
+
+  "timeline": {
+    "title": "Sysarmy Galicia Timeline",
+    "description": "Photos from Sysarmy Galicia's events over the years."
+  },
+  "codeOfConduct": {
+    "meta": {
+      "title": "Code of Conduct",
+      "lastUpdated": "Latest updated: {{date}}",
+      "shortTitle": "CoC"
+    },
+    "general": {
+      "title": "General",
+      "rules": [
+        "The truth is that we don't care about your religion, your political ideas, your color, your beliefs, your sexual or dietary preferences. So there's no reason in the world to make a fuss about that.",
+        "If you get angry, you lose. If there's a problem and you see that you're starting to lose your temper, it's better to count to 1024 and pass on the issue, nothing is really that important.",
+        "Any conversation will be welcome as long as it remains friendly, pleasant and civilized. As soon as any of these things is lost, the conversation must be cut short.",
+        "This group is open to anyone not related to computer science who wants to chat and learn about systems.",
+        "Knowing netiquette is the best way to get along on the net. It doesn't hurt to review it from time to time.",
+        "We are a group of professionals, and we behave as such. Any action aimed at bothering another member or the group (insults, hacks, spam, etc.) is considered unprofessional, whether present or absent, beyond any internal issue between the parties."
+      ]
+    },
+    "telegram": {
+      "title": "About the Telegram group",
+      "rules": [
+        "In this modern world, it's preferable to be on modern messaging services (please let IRC die). However, being close as a community doesn't imply personal closeness between members, so if you want to send a private message, make sure you have their consent first so as not to make newcomers uncomfortable."
+      ]
+    },
+    "collaboration": {
+      "title": "About collaboration",
+      "rules": [
+        "We are always looking for people willing to lend a hand with the community. Don't ask if you can collaborate, ask how.",
+        "Being a volunteer carries responsibility and we expect it to be taken seriously.",
+        "We accept any type of hardware donation or anything that can help us in events and/or to organize new ones."
+      ]
+    },
+    "sanctions": {
+      "title": "About sanctions",
+      "rules": [
+        "Failure to comply with the coexistence rules of this code implies sanctions. These are decided by the affected parties due to the infractions committed. Although the door is not closed to anyone, it is important to abide by the sanctions when they are imposed, so that this group continues to be a place where we want to be."
+      ]
+    }
+  }
+}

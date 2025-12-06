@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "title": "Sysarmy Galicia",
+    "description": "Comunidade de tecnoloxía e sistemas en Galicia",
+    "keywords": "sysarmy, galicia, tecnoloxía, sistemas, comunidade, desenvolvedores, devops, sysadmin"
+  },
+  "languages": {
+    "label": "Idioma",
+    "en": "Inglés",
+    "gl": "Galego",
+    "es": "Español"
+  },
+  "layout": {
+    "header": {
+      "logoAlt": "Logo de Sysarmy Galicia"
+    },
+    "footer": {
+      "codeOfConduct": "Código de Conduta",
+      "contactEmail": "root@sysarmy.com",
+      "copyright": "Sysarmy"
+    }
+  },
+  "actions": {
+    "join": "Únete á Comunidade",
+    "viewEvents": "Ver Eventos",
+    "explore": "Explorar Recursos"
+  },
+  "home": {
+    "meta": {
+      "title": "Inicio - Sysarmy Galicia",
+      "description": "Benvido a Sysarmy Galicia, a comunidade de tecnoloxía e sistemas máis activa de Galicia. Únete a eventos, recursos e networking con profesionais do sector."
+    },
+    "hero": {
+      "welcome": {
+        "title": "Benvido a Sysarmy Galicia",
+        "description": "Profesionais de sistemas e tecnoloxía en Galicia. Únete aos nosos meetups, charlas e eventos de networking.",
+        "ctaText": "Únete á comunidade"
+      },
+      "events": {
+        "title": "Próximos Eventos e Meetups",
+        "description": "Descobre as últimas charlas técnicas, talleres e eventos de networking en Galicia.",
+        "ctaText": "Ver próximos eventos"
+      },
+      "resources": {
+        "title": "Recursos e Coñecemento",
+        "description": "Accede a recursos exclusivos, presentacións de meetups anteriores e contido técnico creado pola comunidade.",
+        "ctaText": "Explorar os nosos recursos"
+      }
+    },
+    "communityResources": {
+      "adminCanas": {
+        "title": "#adminCañas",
+        "description": "Reunímonos o primeiro sábado de cada mes para compartir coñecemento e aprender de forma práctica."
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Accede a presentacións, recursos e materiais compartidos pola comunidade no noso repositorio de GitHub."
+      },
+      "workshops": {
+        "title": "Talleres",
+        "description": "Sesións prácticas para profundar os teus coñecementos en diversos temas de tecnoloxía e sistemas."
+      },
+      "timeline": {
+        "title": "Cronoloxía",
+        "description": "Fotos dos eventos de Sysarmy Galicia ao longo dos anos."
+      }
+    },
+    "communities": {
+      "title": "Comunidades Amigas",
+      "corunaWtf": {
+        "title": "Coruña WTF",
+        "description": "Charlas web mensuais cunha comunidade amigable."
+      },
+      "pythonCoruna": {
+        "title": "Python Coruña",
+        "description": "O hub da Coruña para amantes e aprendices de Python."
+      },
+      "gpul": {
+        "title": "GPUL",
+        "description": "Impulsando código aberto, tecnoloxía e colaboración en Galicia."
+      },
+      "aIndustriosa": {
+        "title": "A Industriosa",
+        "description": "Onde makers e comunidades transforman ideas en realidade."
+      }
+    },
+    "lareiraConf": {
+      "title": "LaReira Conf",
+      "description": "Como comunidade, organizamos LareiraConf, o evento tecnolóxico que reúne a profesionais de IT de Galicia.",
+      "ctaText": "Saber máis"
+    }
+  },
+  "timeline": {
+    "title": "Cronoloxía de Sysarmy Galicia",
+    "description": "Fotos dos eventos de Sysarmy Galicia ao longo dos anos."
+  },
+  "codeOfConduct": {
+    "meta": {
+      "title": "Código de Conduta",
+      "lastUpdated": "Última actualización: {{date}}",
+      "shortTitle": "CdC"
+    },
+    "general": {
+      "title": "Xeral",
+      "rules": [
+        "A verdade é que nos dá igual a túa relixión, as túas ideas políticas, a túa cor, as túas crenzas, as túas preferencias sexuais ou dietéticas. Así que non hai razón no mundo para armar follón por iso.",
+        "Se te enfadas, perdes. Se hai un problema e ves que empezas a perder os nervios, mellor conta ata 1024 e pasa do tema, nada é realmente tan importante.",
+        "Calquera conversa será benvida sempre que se manteña amigable, agradable e civilizada. En canto se perda algunha destas cousas, hai que cortar a conversa.",
+        "Este grupo está aberto a calquera persoa non relacionada coa informática que queira falar e aprender sobre sistemas.",
+        "Coñecer a netiqueta é a mellor maneira de levarse ben na rede. Non está de máis revisala de cando en vez.",
+        "Somos un grupo de profesionais, e comportámonos como tales. Calquera acción dirixida a molestar a outro membro ou ao grupo (insultos, hacks, spam, etc.) considérase pouco profesional, estea presente ou ausente, máis aló de calquera asunto interno entre as partes."
+      ]
+    },
+    "telegram": {
+      "title": "Sobre o grupo de Telegram",
+      "rules": [
+        "Neste mundo moderno, é preferible estar en servizos de mensaxería modernos (por favor, deixade morrer a IRC). Con todo, estar preto como comunidade non implica proximidade persoal entre membros, así que se queres enviar unha mensaxe privada, asegúrate primeiro de ter o seu consentimento para non incomodar aos recén chegados."
+      ]
+    },
+    "collaboration": {
+      "title": "Sobre a colaboración",
+      "rules": [
+        "Sempre estamos buscando xente disposta a botar unha man coa comunidade. Non preguntes se podes colaborar, pregunta como.",
+        "Ser voluntario conleva responsabilidade e esperamos que se tome en serio.",
+        "Aceptamos calquera tipo de doazón de hardware ou calquera cousa que nos poida axudar en eventos e/ou para organizar novos."
+      ]
+    },
+    "sanctions": {
+      "title": "Sobre as sancións",
+      "rules": [
+        "O incumprimento das normas de convivencia deste código implica sancións. Estas son decididas polas partes afectadas debido ás infraccións cometidas. Aínda que a porta non está pechada para ninguén, é importante respectar as sancións cando se impoñen, para que este grupo siga sendo un lugar onde queremos estar."
+      ]
+    }
+  }
+}
