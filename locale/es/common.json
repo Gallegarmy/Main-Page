@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "title": "Sysarmy Galicia",
+    "description": "Comunidad de tecnología y sistemas en Galicia",
+    "keywords": "sysarmy, galicia, tecnología, sistemas, comunidad, desarrolladores, devops, sysadmin"
+  },
+  "languages": {
+    "label": "Idioma",
+    "en": "Inglés",
+    "gl": "Gallego",
+    "es": "Español"
+  },
+  "layout": {
+    "header": {
+      "logoAlt": "Logo de Sysarmy Galicia"
+    },
+    "footer": {
+      "codeOfConduct": "Código de Conducta",
+      "contactEmail": "root@sysarmy.com",
+      "copyright": "Sysarmy"
+    }
+  },
+  "actions": {
+    "join": "Únete a la Comunidad",
+    "viewEvents": "Ver Eventos",
+    "explore": "Explorar Recursos"
+  },
+  "home": {
+    "meta": {
+      "title": "Inicio - Sysarmy Galicia",
+      "description": "Bienvenido a Sysarmy Galicia, la comunidad de tecnología y sistemas más activa de Galicia. Únete a eventos, recursos y networking con profesionales del sector."
+    },
+    "hero": {
+      "welcome": {
+        "title": "Bienvenido a Sysarmy Galicia",
+        "description": "Profesionales de sistemas y tecnología en Galicia. Únete a nuestros meetups, charlas y eventos de networking.",
+        "ctaText": "Únete a la comunidad"
+      },
+      "events": {
+        "title": "Próximos Eventos y Meetups",
+        "description": "Descubre las últimas charlas técnicas, talleres y eventos de networking en Galicia.",
+        "ctaText": "Ver próximos eventos"
+      },
+      "resources": {
+        "title": "Recursos y Conocimiento",
+        "description": "Accede a recursos exclusivos, presentaciones de meetups anteriores y contenido técnico creado por la comunidad.",
+        "ctaText": "Explorar nuestros recursos"
+      }
+    },
+    "communityResources": {
+      "adminCanas": {
+        "title": "#adminCañas",
+        "description": "Nos reunimos el primer sábado de cada mes para compartir conocimiento y aprender de forma práctica."
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Accede a presentaciones, recursos y materiales compartidos por la comunidad en nuestro repositorio de GitHub."
+      },
+      "workshops": {
+        "title": "Talleres",
+        "description": "Sesiones prácticas para profundizar tus conocimientos en diversos temas de tecnología y sistemas."
+      },
+      "timeline": {
+        "title": "Cronología",
+        "description": "Fotos de los eventos de Sysarmy Galicia a lo largo de los años."
+      }
+    },
+    "communities": {
+      "title": "Comunidades Amigas",
+      "corunaWtf": {
+        "title": "Coruña WTF",
+        "description": "Charlas web mensuales con una comunidad amigable."
+      },
+      "pythonCoruna": {
+        "title": "Python Coruña",
+        "description": "El hub de A Coruña para amantes y aprendices de Python."
+      },
+      "gpul": {
+        "title": "GPUL",
+        "description": "Impulsando código abierto, tecnología y colaboración en Galicia."
+      },
+      "aIndustriosa": {
+        "title": "A Industriosa",
+        "description": "Donde makers y comunidades transforman ideas en realidad."
+      }
+    },
+    "lareiraConf": {
+      "title": "LaReira Conf",
+      "description": "Como comunidad, organizamos LareiraConf, el evento tecnológico que reúne a profesionales de IT de Galicia.",
+      "ctaText": "Saber más"
+    }
+  },
+  "timeline": {
+    "title": "Cronología de Sysarmy Galicia",
+    "description": "Fotos de los eventos de Sysarmy Galicia a lo largo de los años."
+  },
+  "codeOfConduct": {
+    "meta": {
+      "title": "Código de Conducta",
+      "lastUpdated": "Última actualización: {{date}}",
+      "shortTitle": "CdC"
+    },
+    "general": {
+      "title": "General",
+      "rules": [
+        "La verdad es que nos da igual tu religión, tus ideas políticas, tu color, tus creencias, tus preferencias sexuales o dietéticas. Así que no hay razón en el mundo para armar follón por eso.",
+        "Si te enfadas, pierdes. Si hay un problema y ves que empiezas a perder los nervios, mejor cuenta hasta 1024 y pasa del tema, nada es realmente tan importante.",
+        "Cualquier conversación será bienvenida siempre que se mantenga amigable, agradable y civilizada. En cuanto se pierda alguna de estas cosas, hay que cortar la conversación.",
+        "Este grupo está abierto a cualquier persona no relacionada con la informática que quiera charlar y aprender sobre sistemas.",
+        "Conocer la netiqueta es la mejor manera de llevarse bien en la red. No está de más revisarla de vez en cuando.",
+        "Somos un grupo de profesionales, y nos comportamos como tales. Cualquier acción dirigida a molestar a otro miembro o al grupo (insultos, hacks, spam, etc.) se considera poco profesional, esté presente o ausente, más allá de cualquier asunto interno entre las partes."
+      ]
+    },
+    "telegram": {
+      "title": "Sobre el grupo de Telegram",
+      "rules": [
+        "En este mundo moderno, es preferible estar en servicios de mensajería modernos (por favor, dejad morir a IRC). Sin embargo, estar cerca como comunidad no implica cercanía personal entre miembros, así que si quieres enviar un mensaje privado, asegúrate primero de tener su consentimiento para no incomodar a los recién llegados."
+      ]
+    },
+    "collaboration": {
+      "title": "Sobre la colaboración",
+      "rules": [
+        "Siempre estamos buscando gente dispuesta a echar una mano con la comunidad. No preguntes si puedes colaborar, pregunta cómo.",
+        "Ser voluntario conlleva responsabilidad y esperamos que se tome en serio.",
+        "Aceptamos cualquier tipo de donación de hardware o cualquier cosa que nos pueda ayudar en eventos y/o para organizar nuevos."
+      ]
+    },
+    "sanctions": {
+      "title": "Sobre las sanciones",
+      "rules": [
+        "El incumplimiento de las normas de convivencia de este código implica sanciones. Estas son decididas por las partes afectadas debido a las infracciones cometidas. Aunque la puerta no está cerrada para nadie, es importante respetar las sanciones cuando se imponen, para que este grupo siga siendo un lugar donde queremos estar."
+      ]
+    }
+  }
+}
