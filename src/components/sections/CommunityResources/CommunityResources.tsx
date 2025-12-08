@@ -26,8 +26,8 @@ export const CommunityResources = () => {
                 rel={isExternalLink ? 'noopener noreferrer' : undefined}
                 className="flex min-h-[180px] w-full cursor-pointer flex-col border border-white p-4 sm:min-h-[200px] sm:p-6 md:p-8 lg:w-[550px] lg:min-w-full"
               >
-                <div className="mb-4 flex h-9 w-9 flex-shrink-0 items-center justify-center md:h-10 md:w-10">
-                  {icon && <FontAwesomeIcon icon={icon} className="h-full w-full text-white" />}
+                <div className="mb-4 flex h-9 w-9 shrink-0 items-center justify-center md:h-10 md:w-10">
+                  {icon && <FontAwesomeIcon icon={icon} className="text-2xl text-white md:text-3xl" />}
                 </div>
                 <h5 className="mb-2 text-xl font-bold sm:text-2xl">
                   {t(`home.communityResources.${element.name}.title`)}
