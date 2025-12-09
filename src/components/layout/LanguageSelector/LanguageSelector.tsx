@@ -59,7 +59,7 @@ export const LanguageSelector = () => {
       >
         <FontAwesomeIcon icon={faGlobe} className="h-4 w-4" />
         <span className="hidden sm:inline">{currentLanguage.name}</span>
-        <span className="sm:hidden">{currentLanguage.flag}</span>
+        <span className="mt-1 sm:hidden">{currentLanguage.flag}</span>
         <svg
           className={`h-4 w-4 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
           fill="none"
