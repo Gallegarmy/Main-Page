@@ -28,7 +28,11 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Header />
-      <HeroSlider slides={heroSliderData} logo="/assets/communities/sysarmy-galicia/sysarmy-galicia-logo.png" />
+      <HeroSlider
+        slides={heroSliderData}
+        logo="/assets/communities/sysarmy-galicia/sysarmy-galicia-logo.png"
+        autoRotateInterval={7000}
+      />
       <CommunityResources />
       <FriendCommunities />
       <LareiraSection data={lareiraSectionData} />
