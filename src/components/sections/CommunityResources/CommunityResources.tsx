@@ -12,19 +12,19 @@ export const CommunityResources = () => {
   const { t } = useTranslation('common');
 
   return (
-    <div className="flex w-full justify-center px-4">
-      <ul className="my-24 grid grid-cols-1 justify-items-center gap-4 md:grid-cols-2 md:gap-6 lg:max-w-[1200px]">
+    <div className="flex w-full justify-center px-8">
+      <ul className="my-24 grid grid-cols-1 justify-items-center gap-4 sm:grid-cols-2 md:gap-6 lg:max-w-[1200px]">
         {communityResourcesData.map((element) => {
           const icon: IconProp | undefined = communityIconMap[element.icon];
           const isExternalLink = element.link.startsWith('http');
 
           return (
-            <li key={element.id}>
+            <li key={element.id} className="max-w-[420px] cursor-pointer lg:max-w-[550px]">
               <a
                 href={element.link}
                 target={isExternalLink ? '_blank' : '_self'}
                 rel={isExternalLink ? 'noopener noreferrer' : undefined}
-                className="flex min-h-[180px] w-full cursor-pointer flex-col border border-white p-4 sm:min-h-[200px] sm:p-6 md:p-8 lg:w-[550px] lg:min-w-full"
+                className="flex h-full cursor-pointer flex-col border border-white p-4 sm:p-6 md:p-8"
               >
                 <div className="mb-4 flex h-9 w-9 shrink-0 items-center justify-center md:h-10 md:w-10">
                   {icon && <FontAwesomeIcon icon={icon} className="text-2xl text-white md:text-3xl" />}
