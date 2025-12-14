@@ -50,11 +50,11 @@
     "communityResources": {
       "adminCanas": {
         "title": "#adminCañas",
-        "description": "Nos reunimos el primer sábado de cada mes para compartir conocimiento y aprender de forma práctica."
+        "description": "Nos reunimos el primer viernes de cada mes para compartir conocimiento y aprender de forma práctica."
       },
       "github": {
         "title": "GitHub",
-        "description": "Accede a presentaciones, recursos y materiales compartidos por la comunidad en nuestro repositorio de GitHub."
+        "description": "Accede a recursos y materiales compartidos por la comunidad en nuestro repositorio de GitHub."
       },
       "workshops": {
         "title": "Talleres",

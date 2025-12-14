@@ -9,14 +9,14 @@ export const FriendCommunities = () => {
   const { t } = useTranslation('common');
 
   return (
-    <section className="flex flex-col justify-center bg-black px-4 py-16">
+    <section className="flex flex-col justify-center bg-black px-8 py-16">
       <h2 className="mb-12 text-center text-3xl font-bold text-white">{t('home.communities.title')}</h2>
-      <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-6">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 justify-center gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
         {friendCommunitiesData.map((community) => {
           const isExternalLink = community.websiteUrl.startsWith('http');
 
           return (
-            <article key={community.id} className="w-full sm:w-80 lg:w-64">
+            <article key={community.id} className="w-full max-w-[420px] xl:w-64">
               <a
                 href={community.websiteUrl}
                 target={isExternalLink ? '_blank' : '_self'}
