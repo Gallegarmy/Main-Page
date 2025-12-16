@@ -1,3 +1,4 @@
+import { buildCloudUrl, buildImagePreviewUrl } from '@/config';
 import { TimelineCity } from '@/types/Timeline';
 
 export const timelineData: readonly TimelineCity[] = [
@@ -7,18 +8,15 @@ export const timelineData: readonly TimelineCity[] = [
     timeline: [
       {
         id: 'timeline-1',
-        year: 2024,
-        image:
-          'https://cloud.sysarmy.galicia.dev/apps/photos/api/v1/publicPreview/1812?x=2048&y=2048&token=3TtB5dfdcB1ZX9FWBol7At9LZzcsZsnH',
-        cloudUrl: 'https://cloud.sysarmy.galicia.dev/apps/photos/public/3TtB5dfdcB1ZX9FWBol7At9LZzcsZsnH',
+        year: 2025,
+        image: buildImagePreviewUrl(4737, 'c7hGm8E9Mz9x02w1FOVxNpZD4LD85Rvl'),
+        cloudUrl: buildCloudUrl('c7hGm8E9Mz9x02w1FOVxNpZD4LD85Rvl'),
       },
-
       {
         id: 'timeline-2',
-        year: 2025,
-        image:
-          'https://cloud.sysarmy.galicia.dev/apps/photos/api/v1/publicPreview/4737?x=2048&y=2048&token=c7hGm8E9Mz9x02w1FOVxNpZD4LD85Rvl',
-        cloudUrl: 'https://cloud.sysarmy.galicia.dev/apps/photos/public/c7hGm8E9Mz9x02w1FOVxNpZD4LD85Rvl',
+        year: 2024,
+        image: buildImagePreviewUrl(1812, '3TtB5dfdcB1ZX9FWBol7At9LZzcsZsnH'),
+        cloudUrl: buildCloudUrl('3TtB5dfdcB1ZX9FWBol7At9LZzcsZsnH'),
       },
     ],
   },
@@ -29,9 +27,8 @@ export const timelineData: readonly TimelineCity[] = [
       {
         id: 'timeline-1',
         year: 2025,
-        image:
-          'https://cloud.sysarmy.galicia.dev/apps/photos/api/v1/publicPreview/2645?x=2048&y=2048&token=sw6tEvMmlvC4ORgeM2kqIMQXJO1rdBRz',
-        cloudUrl: 'https://cloud.sysarmy.galicia.dev/apps/photos/public/sw6tEvMmlvC4ORgeM2kqIMQXJO1rdBRz',
+        image: buildImagePreviewUrl(2645, 'sw6tEvMmlvC4ORgeM2kqIMQXJO1rdBRz'),
+        cloudUrl: buildCloudUrl('sw6tEvMmlvC4ORgeM2kqIMQXJO1rdBRz'),
       },
     ],
   },
