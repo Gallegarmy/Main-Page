@@ -1,0 +1,57 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 10
+    reviewers:
+      - Qwor01
+    labels:
+      - dependencies
+    groups:
+      next:
+        patterns:
+          - next
+          - eslint-config-next
+      react:
+        patterns:
+          - react
+          - react-dom
+          - '@types/react'
+          - '@types/react-dom'
+      fontawesome:
+        patterns:
+          - '@fortawesome/*'
+      i18n:
+        patterns:
+          - i18next
+          - react-i18next
+          - i18next-browser-languagedetector
+      linting:
+        patterns:
+          - eslint
+          - eslint-*
+          - '@eslint/*'
+          - prettier
+          - prettier-*
+          - '@trivago/*'
+      dev-tools:
+        patterns:
+          - husky
+          - lint-staged
+          - '@commitlint/*'
+          - typescript
+          - '@types/node'
+          - tailwindcss
+          - '@tailwindcss/*'
+
+  - package-ecosystem: docker
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    labels:
+      - dependencies
+      - docker
