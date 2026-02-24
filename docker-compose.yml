@@ -12,8 +12,22 @@ services:
       - NODE_ENV=production
       - NEXT_TELEMETRY_DISABLED=1
     restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
+      - /app/.next/cache
+    security_opt:
+      - no-new-privileges
+    cap_drop:
+      - ALL
     healthcheck:
-      test: ['CMD-SHELL', 'wget --no-verbose --tries=1 --spider http://localhost:3000 || exit 1']
+      test:
+        [
+          'CMD',
+          '/nodejs/bin/node',
+          '-e',
+          "fetch('http://localhost:3000').then(r=>{process.exit(r.ok?0:1)}).catch(()=>process.exit(1))",
+        ]
       interval: 30s
       timeout: 10s
       retries: 3
