@@ -1,6 +1,7 @@
 'use client';
 
 import { Header } from '@/components/layout/Header';
+import { IMAGE_BASE_URL, buildImagePreviewUrl } from '@/config';
 import { CodeOfConductSectionData } from '@/types/CodeOfConduct';
 import Image from 'next/image';
 import React from 'react';
@@ -29,14 +30,14 @@ export default function CodeOfConduct() {
             <Image
               height={256}
               width={256}
-              src="https://cloud.sysarmy.galicia.dev/remote.php/dav/photospublic/sw6tEvMmlvC4ORgeM2kqIMQXJO1rdBRz/4912-20250927_220731.jpg"
+              src={`${IMAGE_BASE_URL}/remote.php/dav/photospublic/sw6tEvMmlvC4ORgeM2kqIMQXJO1rdBRz/4912-20250927_220731.jpg`}
               alt="Sysarmy Galicia event photo"
               className="w-36 rounded-md md:col-start-2 md:col-end-2 md:w-64"
             />
             <Image
               height={256}
               width={256}
-              src="https://cloud.sysarmy.galicia.dev/apps/photos/api/v1/publicPreview/4259?x=2048&y=2048&token=sw6tEvMmlvC4ORgeM2kqIMQXJO1rdBRz"
+              src={buildImagePreviewUrl(4259, 'sw6tEvMmlvC4ORgeM2kqIMQXJO1rdBRz')}
               alt="Sysarmy Galicia community gathering"
               className="w-36 rounded-md md:w-64"
             />
