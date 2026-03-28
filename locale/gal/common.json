@@ -94,6 +94,13 @@
     "title": "Cronoloxía de Sysarmy Galicia",
     "description": "Fotos dos eventos de Sysarmy Galicia ao longo dos anos."
   },
+  "merch": {
+    "badge": "merch oficial",
+    "title": "Leva <1>Sysarmy</1> contigo",
+    "subtitle": "Roupa oficial da comunidade tech galega. Cada compra apoia os nosos eventos e meetups.",
+    "buyNow": "Comprar",
+    "filterAll": "Todo"
+  },
   "codeOfConduct": {
     "meta": {
       "title": "Código de Conduta",
