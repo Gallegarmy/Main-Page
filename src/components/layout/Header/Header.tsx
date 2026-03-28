@@ -21,6 +21,15 @@ export const Header = () => {
           className="w-16 md:w-24"
         />
       </Link>
+
+      <div className="m-2 md:m-4 md:text-base">
+        <Link
+          href="/merch"
+          className="text-md border px-2.5 py-1.5 text-white transition-colors duration-300 hover:text-gray-400 xl:px-4 xl:text-lg"
+        >
+          Merch
+        </Link>
+      </div>
       <LanguageSelector />
     </div>
   );
