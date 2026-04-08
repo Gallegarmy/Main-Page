@@ -95,6 +95,13 @@
     "title": "Sysarmy Galicia Timeline",
     "description": "Photos from Sysarmy Galicia's events over the years."
   },
+  "merch": {
+    "badge": "official merch",
+    "title": "Carry the <1>Sysarmy</1> with you",
+    "subtitle": "Official gear for the Galician tech community. Every purchase supports our events and meetups.",
+    "buyNow": "Buy now",
+    "filterAll": "All"
+  },
   "codeOfConduct": {
     "meta": {
       "title": "Code of Conduct",
