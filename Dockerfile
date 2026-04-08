@@ -1,5 +1,5 @@
 # Build stage — install deps and compile
-FROM node:25-alpine@sha256:b9b5737eabd423ba73b21fe2e82332c0656d571daf1ebf19b0f89d0dd0d3ca93 AS builder
+FROM node:25-alpine@sha256:cf38e1f3c28ac9d81cdc0c51d8220320b3b618780e44ef96a39f76f7dbfef023 AS builder
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
